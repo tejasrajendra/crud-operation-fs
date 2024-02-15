@@ -38,5 +38,29 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employee;
 	}
 
+	@Override
+	public Employee updateById(Long id , Employee employeeDetails) {
+		// TODO Auto-generated method stub
+		Employee updateEmployee = employeeRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Employee not exist with id:" + id));
+		
+        updateEmployee.setFirstName(employeeDetails.getFirstName());
+        updateEmployee.setLastName(employeeDetails.getLastName());
+        updateEmployee.setEmailId(employeeDetails.getEmailId());
+
+        employeeRepository.save(updateEmployee);
+		
+		return updateEmployee;
+	}
+
+	@Override
+	public void  deleteById(Long id) {
+		// TODO Auto-generated method stub
+        Optional<Employee> employee = employeeRepository.findById(id);
+        employee.orElseThrow(()-> new ResourceNotFoundException("employee  not found"));
+
+        employeeRepository.deleteById(id);		
+	}
+
 
 }
