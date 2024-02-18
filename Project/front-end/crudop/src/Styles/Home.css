@@ -1,11 +1,9 @@
-/* Home.css */
 
-/* Centering the navigation links */
 nav {
     text-align: center;
   }
   
-  /* Styling for navigation links */
+  
   nav ul {
     list-style: none;
     padding: 0;
@@ -13,10 +11,10 @@ nav {
   
   nav li {
     display: block;
-    margin-bottom: 10px; /* Space between links */
+    margin-bottom: 10px; 
   }
   
-  /* Styling for navigation links */
+  
   .nav-link {
     text-decoration: none;
     color: #007bff;
