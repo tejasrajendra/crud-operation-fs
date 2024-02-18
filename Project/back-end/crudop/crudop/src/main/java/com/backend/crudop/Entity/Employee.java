@@ -31,6 +31,16 @@ public class Employee {
 
     @Column(name = "email_id")
     private String emailId;
+    
+    
+    
+    public Employee(long id, String firstName, String lastName, String emailId) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.emailId = emailId;
+	}
 
 	public long getId() {
 		return id;
@@ -63,8 +73,8 @@ public class Employee {
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
-    
-    
+
+	   
     
     
 }
