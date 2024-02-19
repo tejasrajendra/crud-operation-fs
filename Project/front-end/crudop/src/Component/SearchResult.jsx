@@ -11,13 +11,6 @@ export const SearchResult = (props) => {
   const [display, setDisplay] = useState(true);
 
   const getAllEmployees = () => {
-    // EmployeeService.getAllEmployees().then((response) => {
-    //     // setEmployees(response.data)
-    //     console.log(response.data);
-    // }).catch(error =>{
-    //     console.log(error);
-    // })
-
     setthisId("");
     setFirstName("");
     setLastName("");

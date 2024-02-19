@@ -12,7 +12,7 @@ const Home = () => {
               <Link to="/add-employee">Add-Employee</Link>
             </li>
             <li>
-              <Link to="/search">search the employees</Link>
+              <Link to="/search">Search the Employees</Link>
             </li>
           </ul>
         </nav>

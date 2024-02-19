@@ -18,6 +18,9 @@ export const SearchBar = (props) => {
         // setFirstName(response.data.firstName)
         // setLastName(response.data.lastName)
         // setEmailId(response.data.emailId)
+        const id = response.data.id;
+        const firstName = response.data.firstName
+
         props.setTheValue(
           response.data.id,
           response.data.firstName,
@@ -44,6 +47,7 @@ export const SearchBar = (props) => {
 
   return (
     <div>
+       <h1> Search By Employee-Id </h1>
       <FaSearch id="search-icon" />
       <input
         placeholder="Type to search..."
