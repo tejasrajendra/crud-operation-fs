@@ -33,6 +33,9 @@ public class Employee {
     private String emailId;
     
     
+    public Employee() {
+    	super();
+    }
     
     public Employee(long id, String firstName, String lastName, String emailId) {
 		super();

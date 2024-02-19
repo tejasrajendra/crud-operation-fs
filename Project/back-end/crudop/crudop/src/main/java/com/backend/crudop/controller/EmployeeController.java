@@ -19,7 +19,7 @@ import com.backend.crudop.Entity.Employee;
 import com.backend.crudop.service.EmployeeService;
 
 
-@CrossOrigin("*")
+@CrossOrigin("")
 @RestController
 @RequestMapping("/api/v1/employees")
 public class EmployeeController {
@@ -27,12 +27,12 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService employeeService;
 	
-	 @GetMapping
+
+	@GetMapping
 	    public List<Employee> getAllEmployees(){
 	        return employeeService.getAllEmployees();
 	    }
 
-	    // build create employee REST API
 	    @PostMapping
 	    public Employee createEmployee(@RequestBody Employee employee) {
 	        return employeeService.saveEmployee(employee);
